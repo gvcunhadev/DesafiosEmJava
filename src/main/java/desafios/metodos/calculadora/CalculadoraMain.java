@@ -1,20 +1,18 @@
 package desafios.metodos.calculadora;
 
-import java.util.Locale;
+import java.util.Locale; // Adicione esta linha se quiser definir um Locale específico, como Locale.US
 import java.util.Scanner;
 
 public class CalculadoraMain {
     public static void main(String args[]) {
-        Locale.setDefault(Locale.US);
         Scanner input = new Scanner(System.in);
 
         Calculadora calc = new Calculadora();
 
         int opcao;
-        int num1, num2;
+        double num1, num2;
 
         do {
-
             System.out.println("\n-Escolha uma opção-");
             System.out.println("1. Soma");
             System.out.println("2. Subtracao");
@@ -27,29 +25,29 @@ public class CalculadoraMain {
 
             if (opcao >= 1 && opcao <= 4) {
                 System.out.print("Qual o primeiro numero: ");
-                num1 = input.nextInt();
+                num1 = input.nextDouble();
                 System.out.print("Qual o segundo numero: ");
-                num2 = input.nextInt();
+                num2 = input.nextDouble();
 
                 switch (opcao) {
                     case 1:
-                        int soma = calc.somar(num1, num2);
-                        System.out.printf("\nO resultado da soma é: %d\n", soma);
+                        double soma = calc.somar(num1, num2);
+                        System.out.printf("\nO resultado da soma é: %.2f\n", soma);
                         break;
                     case 2:
-                        int subtracao = calc.subtrair(num1, num2);
-                        System.out.printf("\nO resultado da subtração é: %d\n", subtracao);
+                        double subtracao = calc.subtrair(num1, num2);
+                        System.out.printf("\nO resultado da subtração é: %.2f\n", subtracao);
                         break;
                     case 3:
-                        int multiplicacao = calc.multiplicar(num1, num2);
-                        System.out.printf("\nO resultado da multiplicação é: %d\n", multiplicacao);
+                        double multiplicacao = calc.multiplicar(num1, num2);
+                        System.out.printf("\nO resultado da multiplicação é: %.2f\n", multiplicacao);
                         break;
                     case 4:
                         if (num2 == 0) {
                             System.out.println("\nErro: Divisão por zero não é permitida.");
                         } else {
-                            int divisao = calc.dividir(num1, num2);
-                            System.out.printf("\nO resultado da divisão é: %d\n", divisao);
+                            double divisao = calc.dividir(num1, num2);
+                            System.out.printf("\nO resultado da divisão é: %.2f\n", divisao);
                         }
                         break;
                 }

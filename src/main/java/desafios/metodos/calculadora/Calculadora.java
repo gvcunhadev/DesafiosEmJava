@@ -1,16 +1,18 @@
 package desafios.metodos.calculadora;
 
 public class Calculadora {
-    public int somar(int x, int y){
+    public double somar(double x, double y) {
         return x + y;
     }
-    public int subtrair(int x, int y){
+
+    public double subtrair(double x, double y) {
         return x - y;
     }
-    public int multiplicar(int x, int y){
+
+    public double multiplicar(double x, double y){
         return x * y;
     }
-    public int dividir(int x, int y){
+    public double dividir(double x, double y) {
         return x / y;
     }
 
