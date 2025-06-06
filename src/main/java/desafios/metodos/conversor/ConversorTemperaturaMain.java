@@ -27,6 +27,5 @@ public class ConversorTemperaturaMain {
 
         Impressor.imprimir(resultado);
 
-        scanner.close();
     }
 }

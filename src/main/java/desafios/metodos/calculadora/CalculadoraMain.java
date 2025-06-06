@@ -60,6 +60,5 @@ public class CalculadoraMain {
         } while (opcao != 0);
 
         System.out.println("Calculadora encerrada.");
-        input.close();
     }
 }

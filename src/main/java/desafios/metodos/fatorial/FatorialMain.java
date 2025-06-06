@@ -18,6 +18,5 @@ public class FatorialMain {
             BigInteger resultado = fatorial.calcularFatorial(num1);
             System.out.println("O fatorial de " + num1 + "! " + " é: " + resultado);
         }
-        scanner.close();
     }
 }
