@@ -71,7 +71,7 @@ public class MatrizMain {
 
         Matriz matriz = new Matriz(m, n);
         matriz.preencher(scanner);
-        matriz.imprimir(); // Note: ajuste o método na classe Matriz para melhor formatação
+        matriz.imprimir();
 
         int maior = matriz.encontrarMaiorElemento();
         int menor = matriz.encontrarMenorElemento();
