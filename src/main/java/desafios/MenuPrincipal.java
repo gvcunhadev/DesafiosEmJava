@@ -9,9 +9,14 @@ public class MenuPrincipal {
 
         do {
             System.out.println("\n===== MENU DE ATIVIDADES =====");
-            System.out.println("1. Verificar Palíndromo");
-            System.out.println("2. Calcular Fatorial");
-            System.out.println("3. Conversor de Temperatura");
+            System.out.println("1. Calculadora");
+            System.out.println("2. Conversor de Temperatura");
+            System.out.println("3. Calcular Fatorial");
+            System.out.println("4. Palindromo");
+            System.out.println("5. Matrizes em Java");
+            System.out.println("6. Maipulação de Dados");
+            System.out.println("7. Trocando Valores dos Objetos");
+            System.out.println("8. Sistema de Gerenciamento Baseado em Clean Arch");
             System.out.println("0. Sair");
             System.out.print("Escolha uma opção: ");
             opcao = scanner.nextInt();
@@ -19,13 +24,28 @@ public class MenuPrincipal {
 
             switch (opcao) {
                 case 1:
-                    desafios.metodos.palindrono.PalindronoMain.main(null);
+                    desafios.metodos.calculadora.CalculadoraMain.main(null);
                     break;
                 case 2:
-                    desafios.metodos.fatorial.FatorialMain.main(null);
+                    desafios.metodos.conversor.ConversorTemperaturaMain.main(null);
                     break;
                 case 3:
-                    desafios.metodos.conversor.ConversorTemperaturaMain.main(null);
+                    desafios.metodos.fatorial.FatorialMain.main(null);
+                    break;
+                case 4:
+                    desafios.metodos.palindrono.PalindronoMain.main(null);
+                    break;
+                case 5:
+                    desafios.arrays.MatrizMain.main(null);
+                    break;
+                case 6:
+                    desafios.manipulacao_objetos.manipulacao_dados.ManipularDadosMain.main(null);
+                    break;
+                case 7:
+                    desafios.manipulacao_objetos.troca_valores.TrocarValorMain.main(null);
+                    break;
+                case 8:
+                    desafios.sistema_gerenciamento.SistemaGerenciamentoMain.main(null);
                     break;
                 case 0:
                     System.out.println("Encerrando...");
