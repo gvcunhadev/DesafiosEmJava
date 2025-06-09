@@ -17,6 +17,7 @@ public class MenuPrincipal {
             System.out.println("6. Maipulação de Dados");
             System.out.println("7. Trocando Valores dos Objetos");
             System.out.println("8. Sistema de Gerenciamento Baseado em Clean Arch");
+            System.out.println("9. Agenda de Contatos");
             System.out.println("0. Sair");
             System.out.print("Escolha uma opção: ");
             opcao = scanner.nextInt();
@@ -46,6 +47,9 @@ public class MenuPrincipal {
                     break;
                 case 8:
                     desafios.sistema_gerenciamento.SistemaGerenciamentoMain.main(null);
+                    break;
+                case 9:
+                    desafios.agendaContatos.AgendaMain.main(null);
                     break;
                 case 0:
                     System.out.println("Encerrando...");
