@@ -31,3 +31,5 @@ Certifique-se de ter **Java Development Kit (JDK) 17 ou superior** e **Maven** i
 
 3. Compile o projeto com Maven:
    mvn clean install
+
+   Cada lista está separada por diretório, para cada lista possui uma classe de Menu Principal para poder iniciar as atividades.
